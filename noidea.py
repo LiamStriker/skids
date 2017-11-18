@@ -14,6 +14,7 @@ except Exception as e:
 async def on_ready():
     print(bot.user.id)
     print(bot.user.name)
+    await bot.change_presence( game=discord.Game( name=settings["prefix"]+"skid ~LIAM",type = 1))
 
 @bot.event
 async def on_message(message):
