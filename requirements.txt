@@ -1,0 +1,10 @@
+discord.py
+requests
+pillow
+pyfiglet
+bs4
+lxml
+tweepy
+aiohttp
+cleverwrap
+
