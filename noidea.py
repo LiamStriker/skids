@@ -22,7 +22,10 @@ async def on_message(message):
     prefix = settings["prefix"]
 
     if message.content.startswith(prefix+'skid'):
-        await bot.send_message(channel, "https://static.tumblr.com/28e0158c140f058307c7d6e5a4187ca6/oeev8nw/Fujol130y/tumblr_static_tumblr_static_filename_640.gif")
+        em = discord.Embed()
+        em.set_image(url = "https://static.tumblr.com/28e0158c140f058307c7d6e5a4187ca6/oeev8nw/Fujol130y/tumblr_static_tumblr_static_filename_640.gif")
+
+        await bot.send_message(channel, embed = em)
                 
     elif message.content.startswith(prefix+'mika'):
         await bot.send_message(channel, "```Liam's OP Bunny Wifey```")
