@@ -32,6 +32,12 @@ async def on_message(message):
         
     elif message.content.startswith(prefix+'liam'):
         await bot.send_message(channel, "```Mika's One And Only Little Vampy```")
+        
+    elif message.content.startswith(prefix+'byakko'):
+        await bot.send_message(channel, "```Guarding Your Quarters ROOOOAAAARRRRRR```")
+        
+    elif message.content.startswith(prefix+'caaga'):
+        await bot.send_message(channel, "```I LOVE RAUKI```")
      
     elif message.content.startswith(prefix+'ec'):
         await bot.send_message(channel, "```Warp Drive Wooshing Woosh Woosh```")
