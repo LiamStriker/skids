@@ -36,14 +36,15 @@ async def on_message(message):
     elif message.content.startswith(prefix+'ec'):
         await bot.send_message(channel, "```Warp Drive Wooshing Woosh Woosh```")
         
+    elif message.content.startswith(prefix+'ace'):
+        await bot.send_message(channel, "```Keels Everyone```")
+       
     elif message.content.startswith(prefix+'sparx'):
         em = discord.Embed()
         em.set_image(url = "https://cdn.discordapp.com/attachments/342395530837491726/381679556106518528/TIME_TO_STOP_-GLADE.gif")
         
         await bot.send_message(channel, embed = em)
     
-     elif message.content.startswith(prefix+'ace'):
-        await bot.send_message(channel, "```Keels Everyone```")
     
     print("Starting......")
 bot.run(settings["token"])
