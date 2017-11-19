@@ -22,11 +22,14 @@ async def on_message(message):
     prefix = settings["prefix"]
 
     if message.content.startswith(prefix+'skid'):
-        await bot.send_message(message.channel, "OP")
+        await bot.send_message(channel, "OP")
+                
+    elif message.content.startswith(prefix+'mika'):
+        await bot.send_message(channel, "```Liam's OP Bunny Wifey")
         
-            elif message.content.startswith(prefix+'mika'):
-                await bot.send_message(message.channel, "```Liam's OP Bunny Wifey")
-            
+    elif message.content.startswith(prefix+'Liam'):
+        await bot.send_message(channel, "```Mika's one and only Little Vampy```")
+        
         
       print("Starting......")
 bot.run(settings["token"])
