@@ -36,6 +36,9 @@ async def on_message(message):
     elif message.content.startswith(prefix+'ec'):
         await bot.send_message(channel, "```Warp Drive Wooshing Woosh Woosh```")
         
+    elif message.content.startswith(prefix+'sparx'):
+        await bot.send_message(channel, "https://cdn.discordapp.com/attachments/342395530837491726/381679556106518528/TIME_TO_STOP_-GLADE.gif")
+        
     
     print("Starting......")
 bot.run(settings["token"])
