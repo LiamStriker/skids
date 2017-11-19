@@ -27,7 +27,7 @@ async def on_message(message):
     elif message.content.startswith(prefix+'mika'):
         await bot.send_message(channel, "```Liam's OP Bunny Wifey```")
         
-    elif message.content.startswith(prefix+'Liam'):
+    elif message.content.startswith(prefix+'liam'):
         await bot.send_message(channel, "```Mika's one and only Little Vampy```")
         
         
