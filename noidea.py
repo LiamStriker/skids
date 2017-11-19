@@ -42,6 +42,9 @@ async def on_message(message):
         
         await bot.send_message(channel, embed = em)
     
+     elif message.content.startswith(prefix+'ace'):
+        await bot.send_message(channel, "```Keels Everyone```")
+    
     print("Starting......")
 bot.run(settings["token"])
 #bot.run("")
