@@ -37,7 +37,7 @@ async def on_message(message):
         await bot.send_message(channel, "```Guarding Your Quarters ROOOOAAAARRRRRR```")
         
     elif message.content.startswith(prefix+'caaga'):
-        await bot.send_message(channel, "```I LOVE RAUKI```")
+        await bot.send_message(channel, "```I LOVE KELZIII```")
      
     elif message.content.startswith(prefix+'ec'):
         await bot.send_message(channel, "```Warp Drive Wooshing Woosh Woosh```")
