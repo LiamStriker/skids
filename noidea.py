@@ -58,6 +58,14 @@ async def on_message(message):
         em.set_image(url = "https://cdn.discordapp.com/attachments/274387797140570112/382216656698474506/ScholarlyShamelessHarpseal.gif")
         
         await bot.send_message(channel, embed = em)
+        
+    elif message.content.startswith(prefix+'noble'):
+        await bot.send_message(channel, "**NOOB BUT OP GIFS**")
+       
+        em = discord.Embed()
+        em.set_image(url = "https://78.media.tumblr.com/1400df496966e9f7ba648f56adbf134b/tumblr_olybb4pNly1sxa95wo4_540.gif")
+        
+        await bot.send_message(channel, embed = em)
        
     elif message.content.startswith(prefix+'sparx'):
         em = discord.Embed()
