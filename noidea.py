@@ -30,7 +30,7 @@ async def on_message(message):
     elif message.content.startswith(prefix+'mika'):
         await bot.send_message(channel, "```Liam's OP Bunny Wifey```")
         
-    elif message.content.startswith(prefix+'mia'):
+    elif message.content.startswith(prefix+'liamika'):
         await bot.send_message(channel, "**The Best Ship** :wink:")
        
         em = discord.Embed()
