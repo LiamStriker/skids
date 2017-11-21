@@ -53,6 +53,9 @@ async def on_message(message):
     elif message.content.startswith(prefix+'ace'):
         await bot.send_message(channel, "```Keels Everyone```")
         
+    elif message.content.startswith(prefix+'invite'):
+        await bot.send_message(channel, "There you go~ https://discordapp.com/oauth2/authorize?client_id=381111258172227585&scope=bot&permissions=0")
+        
     elif message.content.startswith(prefix+'sugar'):
         em = discord.Embed()
         em.set_image(url = "https://cdn.discordapp.com/attachments/274387797140570112/382216656698474506/ScholarlyShamelessHarpseal.gif")
