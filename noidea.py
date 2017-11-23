@@ -76,7 +76,13 @@ async def on_message(message):
         
     elif message.content.startswith(prefix+'tea'):        
         em = discord.Embed()
-        em.set_image(url = "https://media.discordapp.net/attachments/300945555658637312/382930382418345984/giphy_5.gif?width=425&height=438")
+        em.set_image(url = "https://cdn.discordapp.com/attachments/300945555658637312/382930382418345984/giphy_5.gif")
+        
+        await bot.send_message(channel, embed = em)
+        
+    elif message.content.startswith(prefix+'galactic'):        
+        em = discord.Embed()
+        em.set_image(url = "https://cdn.discordapp.com/attachments/322410995127549952/383290728333180929/giphy.gif")
         
         await bot.send_message(channel, embed = em)
        
