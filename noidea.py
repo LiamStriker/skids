@@ -62,11 +62,21 @@ async def on_message(message):
         
         await bot.send_message(channel, embed = em)
         
-    elif message.content.startswith(prefix+'noble'):
-        await bot.send_message(channel, "**NOOB BUT OP GIFS**")
-       
+    elif message.content.startswith(prefix+'lola'):
+        em = discord.Embed()
+        em.set_image(url = "https://media.discordapp.net/attachments/382198685884481548/382545301765881856/ddef824a36b55e5089f00812c068222f.gif")
+        
+        await bot.send_message(channel, embed = em)
+        
+    elif message.content.startswith(prefix+'noble'):        
         em = discord.Embed()
         em.set_image(url = "https://78.media.tumblr.com/1400df496966e9f7ba648f56adbf134b/tumblr_olybb4pNly1sxa95wo4_540.gif")
+        
+        await bot.send_message(channel, embed = em)
+        
+    elif message.content.startswith(prefix+'tea'):        
+        em = discord.Embed()
+        em.set_image(url = "https://media.discordapp.net/attachments/300945555658637312/382930382418345984/giphy_5.gif?width=425&height=438")
         
         await bot.send_message(channel, embed = em)
        
