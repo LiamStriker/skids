@@ -31,9 +31,9 @@ async def on_message(message):
         await bot.send_message(channel, "```Liam's OP Bunny Wifey```")
         
     elif message.content.startswith(prefix+'liamika'):
-        await bot.send_message(channel, "**The Best Ship** :wink:")
        
         em = discord.Embed()
+        em = discord.Embed(description = "The Best Ship :wink:")
         em.set_image(url = "https://media.discordapp.net/attachments/335346728897216512/382472973409320960/32e8d07153aa4d76b80250ac1297f30d.png?width=363&height=438")
         
         await bot.send_message(channel, embed = em)
