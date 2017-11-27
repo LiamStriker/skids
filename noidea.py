@@ -44,22 +44,23 @@ async def on_ready():
 async def on_message(message):
     channel = message.channel
     prefix = settings["prefix"]
+    kiss = kiss_gif()
+    slap = slap_gif()
+    hug = hug_gif()
+    bite = bite_gif()
 
     if message.content.startswith(prefix+'skid'):
         em = discord.Embed()
         em.set_image(url = "https://static.tumblr.com/28e0158c140f058307c7d6e5a4187ca6/oeev8nw/Fujol130y/tumblr_static_tumblr_static_filename_640.gif")
-
         await bot.send_message(channel, embed = em)
 
     elif message.content.startswith(prefix+'mika'):
         await bot.send_message(channel, "```Liam's OP Bunny Wifey```")
 
     elif message.content.startswith(prefix+'liamika'):
-
         em = discord.Embed()
         em = discord.Embed(description = "The Best Ship :wink:")
         em.set_image(url = "https://media.discordapp.net/attachments/335346728897216512/382472973409320960/32e8d07153aa4d76b80250ac1297f30d.png?width=363&height=438")
-
         await bot.send_message(channel, embed = em)
 
     elif message.content.startswith(prefix+'liam'):
@@ -86,24 +87,21 @@ async def on_message(message):
     elif message.content.startswith(prefix+'sugar'):
         em = discord.Embed()
         em.set_image(url = "https://cdn.discordapp.com/attachments/274387797140570112/382216656698474506/ScholarlyShamelessHarpseal.gif")
-
         await bot.send_message(channel, embed = em)
 
     elif message.content.startswith(prefix+'deadneko'):
          em = discord.Embed()
          em.set_image(url = "https://cdn.discordapp.com/attachments/365168714947231744/383867183488303111/giphy.gif")
-
          await bot.send_message(channel, embed = em)
 
     elif message.content.startswith(prefix+'lola'):
         em = discord.Embed()
         em.set_image(url = "https://media.discordapp.net/attachments/382198685884481548/382545301765881856/ddef824a36b55e5089f00812c068222f.gif")
-
         await bot.send_message(channel, embed = em)
 
     elif message.content.startswith(prefix+'noble'):
         em = discord.Embed()
-        em.set_image(url = "https://78.media.tumblr.com/1400df496966e9f7ba648f56adbf134b/tumblr_olybb4pNly1sxa95wo4_540.gif")
+        em.set_image(url = "http://37.media.tumblr.com/095ba023b516a10b35d1fb634a3df3c3/tumblr_n991j3CgxX1s4yh14o1_500.gif")
 
         await bot.send_message(channel, embed = em)
 
@@ -122,7 +120,6 @@ async def on_message(message):
     elif message.content.startswith(prefix+'sparx'):
         em = discord.Embed()
         em.set_image(url = "https://cdn.discordapp.com/attachments/342395530837491726/381679556106518528/TIME_TO_STOP_-GLADE.gif")
-
         await bot.send_message(channel, embed = em)
 
     elif message.content.startswith('ami') or message.content.startswith('Ami'):
@@ -130,35 +127,32 @@ async def on_message(message):
         k = cw.say("%s"%(query))
         await bot.send_message(channel, k)
         cw.reset()
-
-    kiss = kiss_gif()
-    if message.content.startswith('opkiss'):
+        
+    elif message.content.startswith('opkiss'):
         text= message.content[len('opkiss'):].split()
         em = discord.Embed()
         em.set_image(url = "{}".format(kiss))
         await bot.send_message(message.channel,content = "{0} **Has Been Kissed By** {1.mention}".format(text[0], message.author),embed = em)
-
-    slap = slap_gif()
-    if message.content.startswith('opslap'):
+        
+    elif message.content.startswith('opslap'):
         text= message.content[len('opslap'):].split()
         em = discord.Embed()
         em.set_image(url = "{}".format(slap))
         await bot.send_message(message.channel,content = "{0} **Got Slapped By** {1.mention}".format(text[0], message.author),embed = em)
-
-    hug = hug_gif()
-    if message.content.startswith('ophug'):
+        
+    elif message.content.startswith('ophug'):
         text= message.content[len('ophug'):].split()
         em = discord.Embed()
         em.set_image(url = "{}".format(hug))
         await bot.send_message(message.channel,content = "{0} **Has Been Hugged By** {1.mention}".format(text[0], message.author),embed = em)
 
-    bite = bite_gif()
-    if message.content.startswith('opbite'):
+    elif message.content.startswith('opbite'):
         text= message.content[len('opbite'):].split()
         em = discord.Embed()
         em.set_image(url = "{}".format(bite))
         await bot.send_message(message.channel,content = "{0} **Just Got Bitten By** {1.mention}".format(text[0], message.author),embed = em)
 
-    print("Starting......")
+
+print("Starting......")
 bot.run(settings["token"])
 #bot.run("")
