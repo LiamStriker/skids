@@ -184,7 +184,7 @@ async def on_message(message):
                     await bot.send_message(channel,"{}".format(fmt))
         except Exception as e:
             fmt = "`None`"
-            await bot.send_message(channel,"{}".format(fmt))
+            await client.send_message(channel,"{}".format(fmt))
 
     kiss = kiss_gif()
     if message.content.startswith('opkiss'):
