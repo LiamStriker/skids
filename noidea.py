@@ -150,8 +150,7 @@ async def on_message(message):
                 self_info = data
                 self_info_embed = discord.Embed(description = self_info)
                 self_info_embed.set_author(name = "Info:")
-                self_info_embed.colour = discord.Colour.red()
-                self_info_embed.set_footer(text = "Helped By OP Noble ~ Liam", icon_url = bot.user.avatar_url)
+                self_info_embed.colour = discord.Colour.blue()
                 try:
                     await bot.send_message(message.channel,embed = self_info_embed)
                 except Exception as e:
@@ -176,7 +175,6 @@ async def on_message(message):
                 other_info_embed = discord.Embed(description = other_info)
                 other_info_embed.set_author(name = "Info:")
                 other_info_embed.colour = discord.Colour.red()
-                self_info_embed.set_footer(text = "Helped By OP Noble ~ Liam", icon_url = bot.user.avatar_url)
                 try:
                     await bot.send_message(message.channel,embed = other_info_embed)
                 except Exception as e:
